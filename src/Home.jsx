@@ -9,10 +9,9 @@ class Home extends Component{
         return(
             <div className="">
                 <Modelos />
-                
             </div>
         )
     }
-      
+
 }
 export default Home

@@ -11,8 +11,9 @@ class Modelo extends Component {
                     <p>{this.props.descripcion}</p>
                     <li>{this.props.precio}</li>
                     <li>{this.props.sku}</li>
+                    <li>{this.props.cantidad}</li>
                 </ul>
-            </div>    
+            </div>
         )
     }
 }
