@@ -1,23 +1,26 @@
-import React, {Component} from "react";
+import React from "react";
 
-class Modelo extends Component {
-    componentDidUpdate(prevProps,prevState){
-        console.log("componentDidUpdate Modelo" ,prevProps,prevState)
-    }
-    render(){
-        console.log("Modelo",this.props)
-        return(
-            <div>
-                <ul>
-                    <li>{this.props.marca}</li>
-                    <li>{this.props.estilo}</li>
-                    <p>{this.props.descripcion}</p>
-                    <li>{this.props.precio}</li>
-                    <li>{this.props.sku}</li>
-                    <li>{this.props.cantidad}</li>
-                </ul>
-            </div>
-        )
-    }
+
+function Modelo(props){
+    const{marca,estilo,descripcion,precio,sku,cantidad} = props
+    return(
+        <div>
+            <ul>
+                <li>{marca}</li>
+                <li>{estilo}</li>
+                <p>{descripcion}</p>
+                <li>{precio}</li>
+                <li>{sku}</li>
+                <li>{cantidad}</li>
+              
+           
+                <label>
+                    <input class="button" type="submit" value="Comprar"></input>
+                    </label>
+           
+                
+            </ul>
+        </div>
+    )
 }
 export default Modelo
