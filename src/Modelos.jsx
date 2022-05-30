@@ -41,10 +41,16 @@ class Modelos extends Component {
                     sku:"SKU: GIBFLY",
                     cantidad:"Cantidad: 10"
                 },
-                ]
+                ],
+                loading:false
             })
 
         },2000)
+    }
+
+    componentDidUpdate(prevProps,prevState){
+        console.log("componentDidUpdate",prevProps,prevState)
+    }
 
     handleClick=()=>{
         this.setState({
@@ -55,13 +61,13 @@ class Modelos extends Component {
                     descripcion:"Descripcion: Gibson Explorer, o X-plorer (desde 2002) es una guitarra eléctrica de cuerpo macizo fabricada por Gibson. Fue presentada en 1958, como desarrollo de un prototipo previo denominado «Futura». Se pretendía con ella introducir en el mercado un modelo de líneas radicales e inspiración futurista, como ocurría con sus hermanas, la Flying V y la Gibson Moderne. Inicialmente fracasó y dejó de fabricarse en 1959. Sin embargo, en 1975, Gibson comienza la reedición de la Explorer debido al éxito de diseños similares de otras compañías.",
                     precio:"Precio: $ 253.000",
                     sku:"SKU: GIBEXP",
-                    cantidad:"Cantidad: 9"
+                    cantidad:"Cantidad: 5"
                  }
             ],
             loading:false
         })
+        
     }
-
     render(){
         const titulo = "Listado de productos"
         if (this.state.loading){
@@ -79,4 +85,5 @@ class Modelos extends Component {
         }
     }
 }
+
 export default Modelos

@@ -1,6 +1,9 @@
 import React, {Component} from "react";
 
 class Modelo extends Component {
+    componentDidUpdate(prevProps,prevState){
+        console.log("componentDidUpdate Modelo" ,prevProps,prevState)
+    }
     render(){
         console.log("Modelo",this.props)
         return(
