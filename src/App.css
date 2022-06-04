@@ -41,7 +41,7 @@ body{
   font-weight:bold;
 }
 
-.App p{
+/*.App p{
   font-weight: lighter;
   font-size: 15px;
   background-color: rgba(87, 85, 85, 0.918);
@@ -51,7 +51,7 @@ body{
   margin-right: 50%;
   width: 400px;
 
-}
+}*/
 .App button{
   background-color: rgba(235, 44, 44, 0.733);
   border-radius: 6px;

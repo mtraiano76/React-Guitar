@@ -7,7 +7,7 @@ function Modelo(props){
         <div>
             <ul>
                 <li>{marca}</li>
-                <li>{precio}</li>
+                <p>$ {precio}</p>
 
 
                 <label>
