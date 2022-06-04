@@ -1,8 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Home from "./Home"
+import HomePage from './Pages/HomePage'
 import Contador from './Contador';
-import Registro from './Registro';
+import RegistroPage from './Pages/RegistroPage'
 
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
     <div className="App">
       <h1>Bienvenidos a Guitar Shop</h1>
       <h2>Productos</h2>
-      <Home />
+      <HomePage />
       <Contador />
-      <Registro />
+      <RegistroPage />
     </div>
   );
 }

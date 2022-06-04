@@ -1,6 +1,6 @@
 import React,{Component} from "react"
 
-class Registro extends Component{
+class RegistroPage extends Component{
     render(){
         return(
             <div className="">
@@ -31,6 +31,6 @@ class Registro extends Component{
             </div>
         )
     }
-} 
+}
 
-export default Registro
+export default RegistroPage

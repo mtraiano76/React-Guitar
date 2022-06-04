@@ -7,18 +7,13 @@ function Modelo(props){
         <div>
             <ul>
                 <li>{marca}</li>
-                <li>{estilo}</li>
-                <p>{descripcion}</p>
                 <li>{precio}</li>
-                <li>{sku}</li>
-                <li>{cantidad}</li>
-              
-           
+
+
                 <label>
-                    <input class="button" type="submit" value="Comprar"></input>
+                    <button type="button">Ver Detalle</button>
                     </label>
-           
-                
+
             </ul>
         </div>
     )
