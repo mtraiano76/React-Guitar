@@ -2,20 +2,17 @@ import React from "react";
 
 
 function Modelo(props){
-    const{marca,estilo,descripcion,precio,sku,cantidad} = props
+    const{marca,precio} = props
     return(
         <div>
             <ul>
                 <li>{marca}</li>
                 <p>$ {precio}</p>
-
-
-                <label>
-                    <button type="button">Ver Detalle</button>
-                    </label>
-
+                <button type="button">Comprar</button>
+                <button type="button">Ver Detalle</button>
             </ul>
         </div>
     )
 }
+
 export default Modelo

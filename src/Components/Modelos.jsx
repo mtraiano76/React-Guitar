@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react"
 import Modelo from "./Modelo"
+import {getAllModelos} from '../Services/modelosServices'
 
 function Modelos(){
     const [loading,setLoading] = useState(true)
@@ -9,8 +10,7 @@ function Modelos(){
     useEffect(
         ()=>{
             setTimeout(() =>{
-                fetch("https://api.mercadolibre.com/sites/MLA/search?q=gibson")
-                .then(res=>res.json())
+                getAllModelos()
                 .then(response=>{
                     console.log("response" ,response.results)
                     setModelos(response.results)
